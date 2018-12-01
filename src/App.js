@@ -3,6 +3,10 @@ import logo from "./logo.svg";
 import "./App.css";
 import Movies from "./components/movies";
 import bootstrap from "bootstrap/dist/css/bootstrap.css";
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { faHeart as fasHeart } from "@fortawesome/free-solid-svg-icons";
+import { faHeart as farHeart } from "@fortawesome/free-regular-svg-icons";
+library.add(fasHeart, farHeart);
 class App extends Component {
   render() {
     return (

@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Like from "./like";
 class Movie extends Component {
   state = {};
   render() {
@@ -9,7 +10,13 @@ class Movie extends Component {
         <td>{this.props.stock}</td>
         <td>{this.props.rate}</td>
         <td>
-          <button onClick={this.props.onDelete} className="btn btn-error">
+          <Like liked={this.props.liked} onLiked={this.props.onLiked} />
+        </td>
+        <td>
+          <button
+            onClick={() => this.props.onDelete(this.props.title)}
+            className="btn btn-error"
+          >
             Delete
           </button>
         </td>
