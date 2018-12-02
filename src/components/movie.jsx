@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Like from "./like";
+import Like from "./common/like";
 class Movie extends Component {
   state = {};
   render() {
@@ -15,7 +15,7 @@ class Movie extends Component {
         <td>
           <button
             onClick={() => this.props.onDelete(this.props.title)}
-            className="btn btn-error"
+            className="btn btn-danger"
           >
             Delete
           </button>
