@@ -73,7 +73,7 @@ class Movies extends Component {
     const { totalItems, movies } = this.getTableData();
     if (totalItems > 0)
       return (
-        <div style={{ marginTop: "20px" }} className="row">
+        <div style={{ marginTop: "20px" }} className="row container">
           <div className="col-md-4">
             <ul className="list-group">
               {genres.map(genre => (
